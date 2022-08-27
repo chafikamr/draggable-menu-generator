@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        table tr {
+            cursor: move;
+        }
+        
+        .my-placeholder {
+            background-color: #f7f7f761;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            height: 40px;
+            box-sizing: border-box;
+        }
+        
+        input[readonly=true] {
+            /* background-color: #F7F7F7; */
+            border: 1px solid black
+        }
+        
+        input[readonly=true]:focus {
+            /* background-color: #F7F7F7; */
+        }
+        
+        .grabber {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #myText {
+            background-color: black;
+            color: rgb(199, 206, 0);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p class="text-center mt-5 display-4"> One dimensional draggable-menu - <span class="text-warning ">sortable.js</span></p>
+    <div class="container  mt-5">
+        <div class="card ">
+            <div class="card-header ">
+                Menu
+            </div>
+            <div class="card-body ">
+                <table class="table table-bordered ">
+                    <thead>
+                        <tr>
+
+                            <th></th>
+                            <th>Name</th>
+                            <th>Src </th>
+                            <th>URL</th>
+                            <th>Target</th>
+                        </tr>
+                    </thead>
+                    <tbody class="sortable ">
+
+                        <tr>
+                            <td class="grabber "><i class="bi bi-arrows-move "></i></td>
+                            <td> <input readonly="true " ondblclick="this.readOnly='' ; " type="text " placeholder=" " aria-label="Disabled input example ">
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option >External</option>
+                                    <option value="1 ">Category</option>
+                                    <option value="2 ">Page</option>
+                                    <option value="3 " selected>Product</option>
+                                  </select>
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option selected>Product One</option>
+                                    <option value="1 ">Product One</option>
+                                    <option value="2 ">Product Two</option>
+                                    <option value="3 ">Product Three</option>
+                                  </select>
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option selected>blank</option>
+                                    <option value="1 ">self</option>
+                                  
+                                  </select>
+
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="grabber "><i class="bi bi-arrows-move "></i></td>
+                            <td> <input readonly="true " ondblclick="this.readOnly='' ; " type="text " placeholder=" " aria-label="Disabled input example ">
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option >External</option>
+                                    <option value="1 ">Category</option>
+                                    <option value="2 ">Page</option>
+                                    <option value="3 " selected>Product</option>
+                                  </select>
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option selected>Product One</option>
+                                    <option value="1 ">Product One</option>
+                                    <option value="2 ">Product Two</option>
+                                    <option value="3 ">Product Three</option>
+                                  </select>
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option selected>blank</option>
+                                    <option value="1 ">self</option>
+                                  
+                                  </select>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="grabber "><i class="bi bi-arrows-move "></i></td>
+                            <td> <input readonly="true " ondblclick="this.readOnly='' ; " type="text " placeholder=" " aria-label="Disabled input example ">
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option >External</option>
+                                    <option value="1 ">Category</option>
+                                    <option value="2 ">Page</option>
+                                    <option value="3 " selected>Product</option>
+                                  </select>
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option selected>Product One</option>
+                                    <option value="1 ">Product One</option>
+                                    <option value="2 ">Product Two</option>
+                                    <option value="3 ">Product Three</option>
+                                  </select>
+                            </td>
+                            <td>
+                                <select aria-label="Default select example ">
+                                    <option selected>blank</option>
+                                    <option value="1 ">self</option>
+                                  
+                                  </select>
+
+
+                            </td>
+                        </tr>
+
+
+
+
+                    </tbody>
+
+                </table>
+                <table class="table">
+                    <tr>
+
+                        <td> <input readonly="true " ondblclick="this.readOnly='' ; " type="text " placeholder=" " aria-label="Disabled input example ">
+                        </td>
+                        <td>
+                            <select aria-label="Default select example ">
+                                <option >External</option>
+                                <option value="1 ">Category</option>
+                                <option value="2 ">Page</option>
+                                <option value="3 " selected>Product</option>
+                              </select>
+                        </td>
+                        <td>
+                            <select aria-label="Default select example ">
+                                <option selected>Product One</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                                <option value="1 ">Product One</option>
+                                <option value="2 ">Product Two</option>
+                                <option value="3 ">Product Three</option>
+                              </select>
+                        </td>
+                        <td>
+                            <select aria-label="Default select example ">
+                                <option selected>blank</option>
+                                <option value="1 ">self</option>
+                              
+                              </select>
+
+
+                        </td>
+
+                        <td class=" "><button class="btn btn-success d-block" style="width:100%">Add New </button></td>
+                    </tr>
+
+                </table>
+
+                <div>
+                    <button class="btn btn-primary " onclick="sani() " style="width:100%">stringify</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                Output
+            </div>
+            <div class="card-body">
+                <pre id="myText"></pre>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+    <script src="html5sortable.min.js "></script>
+    <!-- <script src="main.js "></script> -->
+    <script>
+        sortable('.sortable', {
+            placeholderClass: 'my-placeholder',
+            forcePlaceholderSize: true,
+
+            placeholder: '<tr><td colspan="5" style="background-color:#f7f7f761"></td></tr>',
+            itemSerializer: (serializedItem) => {
+                return {
+                    text: serializedItem.node.children[1].children[0].value,
+                    link_src: serializedItem.node.children[2].children[0].value,
+                    url: serializedItem.node.children[3].children[0].value,
+                    target: serializedItem.node.children[4].children[0].value,
+                }
+            }
+        });
+
+
+        function sani() {
+            document.getElementById('myText').innerHTML = JSON.stringify(sortable('.sortable', 'serialize')[0].items, undefined, 2);
+            console.log(sortable('.sortable', 'serialize')[0].items);
+        }
+    </script>
+    <p class="text-center mt-5 display-4"> By - <span class="text-primary ">Chafik Amraoui-</span></p>
+
+</body>
+
+</html>
